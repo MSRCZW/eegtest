@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        android:background="@drawable/beijing"
+        >
+
+        <ImageView
+            android:id="@+id/money"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/hongbao"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:scaleType="fitXY"/>
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="#FCD224"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="登录领新年红包"
+            android:textSize="10sp"
+            android:textColor="#888"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/upload"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:background="#1CA4FB"
+            android:drawableLeft="@drawable/upload"
+            android:text=" 我要发布"
+            android:textColor="#fff"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/download"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/shape"
+                android:gravity="center"
+                android:drawableTop="@drawable/xiazai"
+                android:text="下载管理"
+                android:textSize="10sp"
+                android:textColor="#8B8878"/>
+
+            <Button
+                android:id="@+id/cloud"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shape"
+                android:drawableTop="@drawable/yun"
+                android:gravity="center"
+                android:text="离线空间"
+                android:textSize="10sp"
+                android:textColor="#8B8878"/>
+
+            <Button
+                android:id="@+id/vip"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shape"
+                android:drawableTop="@drawable/vip"
+                android:gravity="center"
+                android:text="会员中心"
+                android:textSize="10sp"
+                android:textColor="#8B8878"/>
+        </LinearLayout>
+        <!--
+            第三个线性布局,这里我们放置在大的线性布局中,作为子布局使用,设置背景颜色为绿色
+            这里面android:layout_width="match_parent"指的是宽度占满父元素LinearLayout的宽度
+                android:layout_height="200dp"高度占200dp
+                android:background="@android:color/holo_green_light"设置背景色
+         -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/note"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/shape"
+                android:gravity="center"
+                android:drawableTop="@drawable/shijian"
+                android:text="历史记录"
+                android:textSize="10sp"
+                android:textColor="#8B8878"/>
+
+            <Button
+                android:id="@+id/collect"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shape"
+                android:drawableTop="@drawable/star"
+                android:gravity="center"
+                android:text="收藏中心"
+                android:textSize="10sp"
+                android:textColor="#8B8878"/>
+
+            <Button
+                android:id="@+id/like"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shape"
+                android:drawableTop="@drawable/dianzan"
+                android:gravity="center"
+                android:text="点赞"
+                android:textSize="10sp"
+                android:textColor="#8B8878"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

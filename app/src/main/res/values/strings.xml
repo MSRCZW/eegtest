@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BNUZProject</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_one_fragment">Hello one fragment</string>
+    <string name="hello_two_fragment">Hello two fragment</string>
+</resources>

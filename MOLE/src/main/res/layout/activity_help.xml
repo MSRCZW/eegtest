@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_bg"
+    tools:context=".ui.HelpActivity">
+
+    <com.xxx.pokeamole.view.CustomText
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:text="游戏规则"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp_28"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.xxx.pokeamole.view.CustomText
+        android:id="@+id/tv_line_1"
+        android:layout_marginTop="@dimen/dp_25"
+        android:text="1.游戏初始时间为120s,倒计时结束后即游戏结束"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        style="@style/help_tv_style" />
+
+    <com.xxx.pokeamole.view.CustomText
+        android:id="@+id/tv_line_2"
+        style="@style/help_tv_style"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="2.打中地鼠一次，计分加1"
+        app:layout_constraintTop_toBottomOf="@id/tv_line_1" />
+
+    <com.xxx.pokeamole.view.CustomText
+        android:id="@+id/tv_line_3"
+        style="@style/help_tv_style"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="3.每增加20分时，游戏时间加5s"
+        app:layout_constraintTop_toBottomOf="@id/tv_line_2" />
+
+    <com.xxx.pokeamole.view.CustomText
+        android:id="@+id/tv_line_4"
+        style="@style/help_tv_style"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="4.地鼠出现的频率会随游戏时间而改变"
+        app:layout_constraintTop_toBottomOf="@id/tv_line_3" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_40"
+        android:background="@drawable/game_back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_line_4" />
+</android.support.constraint.ConstraintLayout>

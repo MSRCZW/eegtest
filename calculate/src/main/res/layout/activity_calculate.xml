@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.bai.calculate.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/button_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:onClick="restart"
+        android:text="确定"
+        app:layout_constraintEnd_toStartOf="@+id/button_skip"
+        app:layout_constraintTop_toBottomOf="@+id/edit_result" />
+
+    <TextView
+        android:id="@+id/text_num"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="57dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="54dp"
+        android:text="请点击确定开始测试"
+        android:textColor="#FFFFF0"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_skip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_Score" />
+
+    <EditText
+        android:id="@+id/edit_result"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="3dp"
+        android:singleLine="false"
+        android:textColor="#FFFFF0"
+        android:textColorHint="#FFFFF0"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_skip"
+        app:layout_constraintEnd_toEndOf="@+id/button_skip"
+        app:layout_constraintStart_toEndOf="@+id/equation_text"
+        app:layout_constraintTop_toBottomOf="@+id/text_num" />
+
+    <TextView
+        android:id="@+id/true_times"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginStart="16dp"
+        android:textColor="#FFFFF0"
+        app:layout_constraintBottom_toTopOf="@+id/cd_time"
+        app:layout_constraintEnd_toStartOf="@+id/text_Score"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_Score" />
+
+    <TextView
+        android:id="@+id/cd_time"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="37dp"
+        android:layout_marginTop="37dp"
+        android:textColor="#FFFFF0"
+        app:layout_constraintBottom_toBottomOf="@+id/text_num"
+        app:layout_constraintEnd_toEndOf="@+id/true_times"
+        app:layout_constraintStart_toStartOf="@+id/true_times"
+        app:layout_constraintTop_toTopOf="@+id/text_Score" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:onClick="numOnclick"
+        android:text="1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="15dp"
+        android:onClick="numOnclick"
+        android:text="2"
+        app:layout_constraintStart_toEndOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@+id/button_ok" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="numOnclick"
+        android:text="3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button_skip" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:onClick="numOnclick"
+        android:text="4"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:onClick="numOnclick"
+        android:text="5"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="numOnclick"
+        android:text="6"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="numOnclick"
+        android:text="7"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button8"
+        app:layout_constraintStart_toStartOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:onClick="numOnclick"
+        android:text="8"
+        app:layout_constraintStart_toStartOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="numOnclick"
+        android:text="9"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button8"
+        app:layout_constraintStart_toStartOf="@+id/button6" />
+
+    <Button
+        android:id="@+id/button0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="numOnclick"
+        android:text="0"
+        app:layout_constraintBaseline_toBaselineOf="@+id/delete_buttom"
+        app:layout_constraintStart_toStartOf="@+id/button8" />
+
+    <TextView
+        android:id="@+id/text_Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="139dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#FFFFF0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/true_times"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="183dp"
+        android:onClick="skipClick"
+        android:text="略过"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/equation_text"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFF0"
+        android:textColorHint="#FFFFF0"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/button_ok"
+        app:layout_constraintStart_toStartOf="@+id/button_ok"
+        app:layout_constraintTop_toBottomOf="@+id/text_num" />
+
+    <Button
+        android:id="@+id/delete_buttom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:onClick="deleteOnclick"
+        android:text="←"
+        app:layout_constraintStart_toEndOf="@+id/button0"
+        app:layout_constraintTop_toBottomOf="@+id/button9" />
+
+</android.support.constraint.ConstraintLayout>
