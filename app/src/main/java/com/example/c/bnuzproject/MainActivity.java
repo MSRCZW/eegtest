@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 import com.hjm.bottomtabbar.BottomTabBar;
+import com.github.pwittchen.neurosky.library.NeuroSky;
 public class MainActivity extends AppCompatActivity implements OneFragment.OnFragmentInteractionListener,TwoFragment.OnFragmentInteractionListener {
     private BottomTabBar mBottomTabBar;
 

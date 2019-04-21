@@ -16,6 +16,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -32,4 +36,5 @@ dependencies {
     implementation project(':id')
     implementation 'com.hjm:BottomTabBar:1.2.2'
     implementation project(':MOLE')
+    implementation 'com.github.pwittchen:neurosky-android-sdk:0.0.2'
 }
